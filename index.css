@@ -7,21 +7,24 @@
 
 .header {
     background-color: rgba(255, 255,255, 0.7);
+    height: 80px;
     padding: 0px 120px;
 }
 
 .menu {
-    display: inline-block;
-    position: absolute;
+    display: block;
     text-align: right;
+    float: right;
+    height: 100%;
 }
 
 .logo {
-    display: inline-block;
+    display: block;
     background: url(./img/logo.png) no-repeat;
     background-position: 1px;
-    height: 80px;
+    height: 100%;
     width: 500px;
+    float: left;
 }
 
 .login {
@@ -30,5 +33,9 @@
 
 .navigation li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px;    
+}
+
+.navigation li:last-child {
+    margin-right: 0;
 }
